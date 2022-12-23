@@ -18,7 +18,6 @@ body {
 .timeline {
   display: flex;
   margin: 5px 0;
-
 }
 
 .timeline-chunk {
@@ -29,13 +28,17 @@ body {
   width: 100%;
 }
 
-.timeline-chunk+.timeline-chunk {
+.timeline-chunk + .timeline-chunk {
   margin-left: 4px;
 }
 
+.timeline-chunk-active ~ .timeline-chunk > .timeline-chunk-inner{
+ width: 0;
+}
+
+
 .timeline-chunk-inner {
   height: inherit;
-  width: 0;
   background-color: #fff;
   border-radius: inherit;
 }
@@ -43,7 +46,6 @@ body {
 .player-content {
   position: relative;
 }
-
 
 .player-content img {
   width: 100%;
@@ -55,7 +57,7 @@ body {
   display: none;
 }
 
-.player-chunk--active {
+.player-chunk-active {
   display: block;
 }
 
@@ -64,8 +66,7 @@ body {
   width: 20%;
   height: 100%;
 
-  background-color: #fff;
-
+  /* background-color: #fff; */
 }
 
 .player-chunk-prev {
@@ -77,3 +78,4 @@ body {
   right: 0;
   top: 0;
 }
+
