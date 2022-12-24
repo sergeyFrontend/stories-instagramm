@@ -7,21 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stories Instagram</title>
-<!-- подключеник icon в title -->
+  <!-- подключеник icon в title -->
   <link rel="icon" type="icon/svg" href="img/svg/icon.svg">
   <!-- подключение index.css "ПОДКЛЮЧЕНИЕ СТИЛЕЙ" -->
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-<!-- основная часть верстки нашей instagram stories -->
+  <!-- основная часть верстки нашей instagram stories -->
   <div class="player">
+    <!-- блок отвечающий за активную историю -->
     <div class="timeline">
       <div class="timeline-chunk ">
-        <div class="timeline-chunk-inner" ></div>
+        <div class="timeline-chunk-inner"></div>
       </div>
       <div class="timeline-chunk timeline-chunk-active">
-        <div class="timeline-chunk-inner" ></div>
+        <div class="timeline-chunk-inner"></div>
       </div>
       <div class="timeline-chunk  ">
         <div class="timeline-chunk-inner"></div>
@@ -31,28 +32,31 @@
       </div>
     </div>
 
-    <div class="player-content">
+    <div class="player-content-wrapper">
+      <!-- переключение -->
       <div class="player-chunk-switcher player-chunk-prev"></div>
       <div class="player-chunk-switcher player-chunk-next"></div>
+      <!-- картинки -->
 
-      <div class="player-chunk player-chunk-active ">
-        <img src="img/chunk1.jpg" alt="bmw 3">
+      <div class="player-content">
+        <div class="player-chunk player-chunk-active ">
+          <img src="img/chunk1.jpg" alt="bmw 3">
+        </div>
+        <div class="player-chunk">
+          <img src="img/chunk1.jpg" alt="bmw 3">
+        </div>
+        <div class="player-chunk">
+          <img src="img/chunk1.jpg" alt="bmw 3">
+        </div>
+        <div class="player-chunk">
+          <img src="img/chunk1.jpg" alt="bmw 3">
+        </div>
       </div>
-      <div class="player-chunk">
-        <img src="img/chunk1.jpg" alt="bmw 3">
-      </div>
-      <div class="player-chunk">
-        <img src="img/chunk1.jpg" alt="bmw 3">
-      </div>
-      <div class="player-chunk">
-        <img src="img/chunk1.jpg" alt="bmw 3">
-      </div>
+
     </div>
 
   </div>
-
-
-
+  
   <!-- подключени JS -->
   <script src="js/index.js"></script>
 </body>
